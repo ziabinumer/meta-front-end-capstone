@@ -1,0 +1,22 @@
+.title {
+    color: rgba(184, 170, 15, 1);
+    font-weight: "bold";
+    font-size: 75px;
+}
+caption {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.b0 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.b-4 {
+    margin-bottom: -4px;
+}
+
+.button {
+    border-radius: 15px;
+}
