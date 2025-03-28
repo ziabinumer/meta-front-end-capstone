@@ -1,9 +1,13 @@
+.navLink:hover {
+    color: lightblue;
+    font-size: medium;
+}
 .title {
     color: rgba(184, 170, 15, 1);
     font-weight: "bold";
     font-size: 75px;
 }
-caption {
+.city {
     font-size: 28px;
     color: white;
     font-weight: bold;
@@ -19,4 +23,8 @@ caption {
 
 .button {
     border-radius: 15px;
+}
+
+#Testimonial {
+    background-color: rgba(73, 94, 87, 1);
 }

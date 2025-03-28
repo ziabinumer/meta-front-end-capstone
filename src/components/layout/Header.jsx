@@ -1,33 +1,39 @@
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
+import Image from "react-bootstrap/Image"
+
+import logo from "../../assets/logo.png"
+
+import { Link } from "react-router-dom";
+
 
 //import "bootstrap/dist/css/bootstrap.min.css"
 
 export default function Header() {
     const links = [
         {
-            name: "home",
+            name: "Home",
             add: "/",
         },
         {
-            name: "about",
+            name: "About",
             add: "/about"
         },
         {
-            name: "menu",
+            name: "Menu",
             add: "/menu"
         },
         {
-            name: "reservation",
-            add: "/reservations"
+            name: "Reservation",
+            add: "/reservation"
         },
         {
-            name: "order",
+            name: "Order",
             add: "/order"
         },
         {
-            name: "login",
+            name: "Login",
             add: "login"
         }
     ]
@@ -35,14 +41,14 @@ export default function Header() {
         <div id="Header">
             <Navbar style={{backgroundColor: "white"}} data-bs-theme="light" className="py-3">
                 <Container>
-                    <Navbar.Brand href="/" className="">
-                        Little Lemon
+                    <Navbar.Brand href="/" className="w-25">
+                        <Image src={logo} className="" style={{ width: "50%"}}/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="w-75 d-flex justify-content-evenly">
                             {links.map((link, index)=> (
-                                <Nav.Link href={link.add} key={index} className="text-black">
+                                <Nav.Link as={Link} to={link.add} key={index} className="navLink">
                                     {link.name}
                                 </Nav.Link>
                             ))}

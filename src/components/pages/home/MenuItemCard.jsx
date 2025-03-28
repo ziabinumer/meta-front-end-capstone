@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button"
 export default function MenuItemCard(props) {
     const item = props.item
     return (
-            <Card style={{width: "22rem", maxHeight: "450px"}}>
+            <Card style={{width: "22rem", maxHeight: "450px"}} key={props.index}>
                 <Card.Img variant="top" src={item.src}/>
                 <Card.Body>
                     <Card.Title className="d-flex flex-row justify-content-between">

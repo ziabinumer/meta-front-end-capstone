@@ -1,10 +1,10 @@
 import Container from "react-bootstrap/Container"
-import Button from "react-bootstrap/Container"
+import Button from "react-bootstrap/Button"
 import Image from "react-bootstrap/Image"
 
-import heroImg from "../assets/headerPic.webp"
+import heroImg from "../../../assets/headerPic.webp"
 
-import "./styles/styles.css"
+import "../../styles/styles.css"
 
 export default function Hero() {
     const data = {
@@ -25,15 +25,14 @@ export default function Hero() {
                     <h1 className="title b-4" >
                         {data.title}
                     </h1>
-                    <caption className="mt-0 pt-0" color="white">Chicago</caption>
+                    <span className="mt-0 pt-0 city" color="white">Chicago</span>
                     <p>
                         {data.description}
                     </p>
-                    <div className="d-flex justify-content-start">
-                        <Button className="btn btn-warning w-100 pt-2 pb-2 px-5 button">
+
+                        <Button className="btn btn-warning w-50 pt-2 pb-2 px-5 button">
                             {data.buttonTitle}
                         </Button>
-                    </div>
                 </Container>
                 <Container>
                     <Image src={heroImg}></Image>
