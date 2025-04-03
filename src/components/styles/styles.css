@@ -5,7 +5,7 @@
 .title {
     color: rgba(184, 170, 15, 1);
     font-weight: "bold";
-    font-size: 75px;
+    font-size: 64px;
 }
 .city {
     font-size: 28px;
@@ -24,7 +24,12 @@
 .button {
     border-radius: 15px;
 }
-
+.heroImg {
+    border-radius: 25px;
+}
+.bg-pgreen {
+    background-color: rgba(73, 94, 87, 1);
+}
 #Testimonial {
     background-color: rgba(73, 94, 87, 1);
 }

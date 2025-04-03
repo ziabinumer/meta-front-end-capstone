@@ -12,10 +12,9 @@ export default routes;
 
 */
 
-import Home from "./components/pages/home/Home";
-import ComingSoon from "./components/pages/ComingSoon/ComingSoon";
-import Reservation from "./components/pages/reservation/Reservation";
-import BookingConfirmed from "./components/pages/bookingConfirmed/BookingConfirmed";
+import Home from "./components/pages/Home/Index";
+import ComingSoon from "./components/pages/ComingSoon";
+import Reservation from "./components/pages/Reservation";
 const routes = [
     {
         name: 'home',
@@ -36,11 +35,6 @@ const routes = [
         name: 'reservation',
         path: '/reservation',
         element: <Reservation/>
-    },
-    {
-        name: 'booking confirmed',
-        path: '/booking-confirmed',
-        element: <BookingConfirmed/>
     },
     {
         name: 'order',
