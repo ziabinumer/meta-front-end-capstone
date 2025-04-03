@@ -1,0 +1,49 @@
+html, body, #root, .app-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1; 
+    display: flex;
+}
+footer {
+    flex-shrink: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.color-primary {
+    color: #495E57;
+}
+@media only screen and (max-width: 600px) {
+    * {
+        max-width: 100%;
+    }
+    #Hero{
+        height: auto !important;
+        padding-top: 7vh;
+        padding-bottom: 10vh;
+    }
+    .heroContainerL2{
+        flex-direction: column !important;
+    }
+    .heroContainerL2 * {
+        padding-top: 2vh !important;
+    }
+    .button {
+        width: 100% !important;
+    }
+
+    #About {
+        margin-bottom: 12vh;
+    }
+
+    #MessagePage {
+        height: 90vh !important;
+    }
+}
