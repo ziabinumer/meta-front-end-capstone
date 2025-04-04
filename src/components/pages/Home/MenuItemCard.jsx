@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 import Button from "react-bootstrap/Button"
@@ -16,7 +18,7 @@ export default function MenuItemCard(props) {
                         {item.text}
                     </Card.Text>
                     <Container className="w-100 d-flex justify-content-center">
-                        <Button variant="primary">
+                        <Button as={Link} to="/order" variant="primary">
                             Order Online
                         </Button>
                     </Container>

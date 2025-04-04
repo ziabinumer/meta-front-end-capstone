@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -14,7 +16,7 @@ export default function Highlight(props) {
                         <h2 style={{fontSize: "clamp(32px, 5vw, 48px)"}}>Today's Specials!</h2>
                     </Col>
                     <Col xs={12} md={4} className="d-flex justify-content-center justify-content-md-end">
-                        <Button className="btn btn-warning px-4">Order Online</Button>
+                        <Button as={Link} to="/order" className="btn btn-warning px-4">Order Online</Button>
                     </Col>
                 </Row>
             </Container>

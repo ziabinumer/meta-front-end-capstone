@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 import Container from "react-bootstrap/Container"
 import Button from "react-bootstrap/Button"
 import Image from "react-bootstrap/Image"
@@ -14,6 +16,7 @@ export default function Hero() {
         "Welcome to Little Lemon, where fresh Mediterranean flavors meet modern dining." + 
         "Enjoy authentic, handcrafted dishes made with the finest ingredients.",
         buttonTitle: "Reserve a Table",
+        buttonLink: "/reservation",
         imageSrc: 
         "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=400"
     }
@@ -30,9 +33,9 @@ export default function Hero() {
                         {data.description}
                     </p>
 
-                        <Button className="btn btn-warning w-50 pt-2 pb-2 px-5 button">
-                            {data.buttonTitle}
-                        </Button>
+                    <Button as={Link} to={data.buttonLink} className="btn btn-warning w-50 pt-2 pb-2 px-5 button">
+                        {data.buttonTitle}
+                    </Button>
                 </Container>
                 <Container>
                     <Image src={heroImg} className="heroImg"></Image>
